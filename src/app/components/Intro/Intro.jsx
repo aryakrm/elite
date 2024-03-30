@@ -1,6 +1,7 @@
 import './Intro.scss'
 import Image from 'next/image'
 import { Roboto } from 'next/font/google'
+import { FaArrowRightLong } from "react-icons/fa6";
 
  
 const roboto = Roboto({
@@ -18,35 +19,45 @@ function Intro() {
       alt="Intro Image"
     /></div>
         <div className='introRight' >
-            <div className='title' ><h1>Elite Food <br /> & Beverage</h1>
-            <button type='button' >Bulk Order</button></div>
+          <div className='introRightMain' ><div className='title' ><h1>Elite Food & Beverage</h1>
+            <button type='button' >Bulk Order</button></div></div>
+            
             
             <div className='introBar' >
                 <h2>Best Sellers</h2>
         <div className='bestSellers' ><Image
-      src="/bs1.png"
-      width={150}
-      height={150}
+      src="/badum.jpg"
+      width={120}
+      height={120}
       alt="Intro Image"
-    /></div>
+    /> 
+    <p>Roasted Almond</p>
+     </div>
         <div className='bestSellers' ><Image
-      src="/bs2.png"
-      width={150}
-      height={150}
+      src="/chiti.jpg"
+      width={120}
+      height={120}
       alt="Intro Image"
-    /></div>
+    /> 
+    <p>White Kidney Beans</p>
+     </div>
         <div className='bestSellers' ><Image
-      src="/bs3.png"
-      width={150}
-      height={150}
+      src="/ghermez.jpg"
+      width={120}
+      height={120}
       alt="Intro Image"
-    /></div>
+    /> 
+    <p>Red Kidney Beans</p>
+     </div>
         <div className='bestSellers' ><Image
-      src="/bs4.png"
-      width={150}
-      height={150}
+      src="/nokhod.jpg"
+      width={120}
+      height={120}
       alt="Intro Image"
-    /></div>
+    /> 
+    <p>Chick Peas</p>
+     </div>
+     <FaArrowRightLong />
      </div>
         </div>
      
