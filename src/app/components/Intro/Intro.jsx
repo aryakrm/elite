@@ -13,7 +13,7 @@ function Intro() {
   return (
     <section>
         <div className='introLeft' ><Image
-      src="/introPic.JPG"
+      src="/static/images/introPic.JPG"
       width={400}
       height={400}
       alt="Intro Image"
