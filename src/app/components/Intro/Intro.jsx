@@ -42,7 +42,7 @@ function Intro() {
     <p>White Kidney Beans</p>
      </div>
         <div className='bestSellers' ><Image
-      src="/ghermez.jpg"
+      src={"/ghermez.jpg"}
       width={120}
       height={120}
       alt="gherm"
