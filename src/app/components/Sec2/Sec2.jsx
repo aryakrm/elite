@@ -27,7 +27,7 @@ function Sec2() {
             </div>
             <div>
             <Image
-      src="/lepeli.jpg"
+      src="/static/images/lepeli.jpg"
       width={250}
       height={250}
       alt="lep"

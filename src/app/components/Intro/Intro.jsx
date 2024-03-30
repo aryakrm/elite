@@ -26,7 +26,7 @@ function Intro() {
             <div className='introBar' >
                 <h2>Best Sellers</h2>
         <div className='bestSellers' ><Image
-      src="/badum.jpg"
+      src="/static/images/badum.JPG"
       width={120}
       height={120}
       alt="ba"
@@ -34,7 +34,7 @@ function Intro() {
     <p>Roasted Almond</p>
      </div>
         <div className='bestSellers' ><Image
-      src="/chiti.jpg"
+      src="/static/images/chiti.jpg"
       width={120}
       height={120}
       alt="chi"
@@ -42,7 +42,7 @@ function Intro() {
     <p>White Kidney Beans</p>
      </div>
         <div className='bestSellers' ><Image
-      src={"/ghermez.jpg"}
+      src="/static/images/ghermez.jpg"
       width={120}
       height={120}
       alt="gherm"
@@ -50,7 +50,7 @@ function Intro() {
     <p>Red Kidney Beans</p>
      </div>
         <div className='bestSellers' ><Image
-      src="/nokhod.jpg"
+      src="/static/images/nokhod.jpg"
       width={120}
       height={120}
       alt="nokh"
