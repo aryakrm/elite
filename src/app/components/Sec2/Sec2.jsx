@@ -12,7 +12,7 @@ function Sec2() {
       src="/nokhodlu.jpg"
       width={250}
       height={250}
-      alt="Intro Image"
+      alt="no"
     /> 
     <p>Roasted Broccoli Chickpeas</p>
             </div>
@@ -21,7 +21,7 @@ function Sec2() {
       src="/sefidli.jpg"
       width={250}
       height={250}
-      alt="Intro Image"
+      alt="sef"
     /> 
     <p>Hearty Tuscan White Bean Soup</p>
             </div>
@@ -30,7 +30,7 @@ function Sec2() {
       src="/lepeli.jpg"
       width={250}
       height={250}
-      alt="Intro Image"
+      alt="lep"
     /> 
     <p>Lemon Balsamic Lentil Salad</p>
             </div>

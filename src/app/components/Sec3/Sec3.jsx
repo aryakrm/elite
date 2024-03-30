@@ -11,7 +11,7 @@ function Sec3() {
       src="/upLeft.jpg"
       width={350}
       height={500}
-      alt="Intro Image"
+      alt="upL"
     /> 
         </div>
         <div className="upRight">
@@ -21,13 +21,13 @@ function Sec3() {
       src="/upRight1.jpg"
       width={300}
       height={250}
-      alt="Intro Image"
+      alt="upR"
     />
     <Image
       src="/upRight2.jpg"
       width={300}
       height={250}
-      alt="Intro Image"
+      alt="upR2"
     />  
     </div>
             
@@ -41,13 +41,13 @@ function Sec3() {
       src="/downLeft1.jpg"
       width={300}
       height={250}
-      alt="Intro Image"
+      alt="dole"
     />
     <Image
       src="/downLeft2.jpg"
       width={300}
       height={250}
-      alt="Intro Image"
+      alt="dole2"
     />  </div>
         </div>
         <div className="downRight">
@@ -55,7 +55,7 @@ function Sec3() {
       src="/downRight.jpg"
       width={350}
       height={500}
-      alt="Intro Image"
+      alt="dori"
     /> 
         </div>
       </div>

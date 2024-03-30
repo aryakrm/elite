@@ -29,7 +29,7 @@ function Intro() {
       src="/badum.jpg"
       width={120}
       height={120}
-      alt="Intro Image"
+      alt="ba"
     /> 
     <p>Roasted Almond</p>
      </div>
@@ -37,7 +37,7 @@ function Intro() {
       src="/chiti.jpg"
       width={120}
       height={120}
-      alt="Intro Image"
+      alt="chi"
     /> 
     <p>White Kidney Beans</p>
      </div>
@@ -45,7 +45,7 @@ function Intro() {
       src="/ghermez.jpg"
       width={120}
       height={120}
-      alt="Intro Image"
+      alt="gherm"
     /> 
     <p>Red Kidney Beans</p>
      </div>
@@ -53,7 +53,7 @@ function Intro() {
       src="/nokhod.jpg"
       width={120}
       height={120}
-      alt="Intro Image"
+      alt="nokh"
     /> 
     <p>Chick Peas</p>
      </div>
