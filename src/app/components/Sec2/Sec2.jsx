@@ -1,5 +1,8 @@
 import "./Sec2.scss"
 import Image from 'next/image'
+import nokhodlu from "../../../../public/static/images/nokhodlu.JPG"
+import sefidli from "../../../../public/static/images/sefidli.JPG"
+import lepeli from "../../../../public/static/images/lepeli.JPG"
 
 function Sec2() {
   return (
@@ -9,7 +12,7 @@ function Sec2() {
         <div className="cards" >
             <div>
             <Image
-      src="/nokhodlu.jpg"
+      src={nokhodlu}
       width={250}
       height={250}
       alt="no"
@@ -18,7 +21,7 @@ function Sec2() {
             </div>
             <div>
             <Image
-      src="/sefidli.jpg"
+      src={sefidli}
       width={250}
       height={250}
       alt="sef"
@@ -27,7 +30,7 @@ function Sec2() {
             </div>
             <div>
             <Image
-      src="/static/images/lepeli.jpg"
+      src={lepeli}
       width={250}
       height={250}
       alt="lep"
