@@ -1,16 +1,16 @@
 import './Header.scss'
 import Nav from "../Nav/Nav"
-import { Roboto } from 'next/font/google'
+import { Vidaloka } from 'next/font/google'
 
  
-const roboto = Roboto({
-  weight: '500',
+const vidaloka = Vidaloka({
+  weight: '400',
   subsets: ['latin'],
 })
 
 function Header() {
   return (
-    <header className={roboto.className}>
+    <header className={vidaloka.className}>
       <Nav/>
     </header>
   )

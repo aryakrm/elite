@@ -1,6 +1,10 @@
 import "./Sec4.scss"
 import Image from "next/image"
 import process1 from "../../../../public/static/images/process1.png"
+import process2 from "../../../../public/static/images/process2.png"
+import process3 from "../../../../public/static/images/process3.png"
+import { TbArrowBigRightLinesFilled } from "react-icons/tb";
+
 
 function Sec4() {
   return (
@@ -11,13 +15,29 @@ function Sec4() {
         <div>
         <Image
       src={process1}
-      width={350}
-      height={350}
+      width={300}
+      height={300}
       alt="process1"
     /> 
         </div>
-        <div></div>
-        <div></div>
+        <TbArrowBigRightLinesFilled />
+        <div>
+        <Image
+      src={process2}
+      width={250}
+      height={250}
+      alt="process2"
+    /> 
+        </div>
+        <TbArrowBigRightLinesFilled />
+        <div>
+        <Image
+      src={process3}
+      width={250}
+      height={250}
+      alt="process3"
+    /> 
+        </div>
       </div>
     </section>
   )

@@ -1,16 +1,11 @@
 import './Intro.scss'
 import Image from 'next/image'
-import { Roboto } from 'next/font/google'
 import { FaArrowRightLong } from "react-icons/fa6";
 import chi from "../../../../public/static/images/chiti.JPG"
 import ghermez from "../../../../public/static/images/ghermez.JPG"
 import nokhod from "../../../../public/static/images/nokhod.JPG"
 
- 
-const roboto = Roboto({
-  weight: '700',
-  subsets: ['latin'],
-})
+
 
 function Intro() {
   return (
