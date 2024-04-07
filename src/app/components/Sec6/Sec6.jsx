@@ -9,11 +9,14 @@ import almaya from "../../../../public/static/images/almaya.png"
 import aswaaq from "../../../../public/static/images/aswaaq.png"
 import carrefour from "../../../../public/static/images/carrefour.png"
 import lulu from "../../../../public/static/images/lulu.png"
+import viva from "../../../../public/static/images/viva.jpeg"
+import westzone from "../../../../public/static/images/westzone.png"
+import uc from "../../../../public/static/images/uc.png"
 import Autoplay from 'embla-carousel-autoplay'
 
 function Sec6() {
 
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
   return (
     <section className='Sec6' >
@@ -24,7 +27,7 @@ function Sec6() {
       <div className='embla__slide' >
             <Image
       src={nesto}
-      width={200}
+      width={150}
       height={100}
       alt="nesto"
     /> 
@@ -32,7 +35,7 @@ function Sec6() {
             <div className='embla__slide' >
             <Image
       src={almaya}
-      width={200}
+      width={150}
       height={100}
       alt="almaya"
     /> 
@@ -40,7 +43,7 @@ function Sec6() {
             <div className='embla__slide' >
             <Image
       src={aswaaq}
-      width={200}
+      width={150}
       height={100}
       alt="aswaaq"
     /> 
@@ -48,7 +51,7 @@ function Sec6() {
             <div className='embla__slide' >
             <Image
       src={carrefour}
-      width={200}
+      width={150}
       height={100}
       alt="carrefour"
     /> 
@@ -56,11 +59,38 @@ function Sec6() {
             <div className='embla__slide' >
             <Image
       src={lulu}
-      width={200}
+      width={150}
       height={100}
       alt="lulu"
     /> 
             </div>
+            <div className='embla__slide' >
+            <Image
+      src={viva}
+      width={150}
+      height={100}
+      alt="viva"
+    /> 
+            </div>
+
+            <div className='embla__slide' >
+            <Image
+      src={uc}
+      width={150}
+      height={100}
+      alt="uc"
+    /> 
+            </div>
+
+            <div className='embla__slide' >
+            <Image
+      src={westzone}
+      width={150}
+      height={100}
+      alt="westzone"
+    /> 
+            </div>
+
       </div>
       </div>
    
