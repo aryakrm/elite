@@ -19,6 +19,9 @@ function Sec5() {
         <textarea name="message" id="message" cols="35" rows="10" placeholder='Your Experience' ></textarea>
         <button type='submit' > Submit </button>
       </form>
+      <p>
+      After you have used Elite products and experienced the delicious taste of food with Elite, you can leave us a comment and share your pleasure with us.
+      </p>
     </section>
   )
 }

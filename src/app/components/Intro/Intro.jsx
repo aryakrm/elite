@@ -17,10 +17,11 @@ function Intro() {
       alt="Intro Image"
     /></div>
         <div className='introRight' >
-          <div className='introRightMain' ><div className='title' ><h1>Elite Food & Beverage</h1>
+          <div className='introRightMain' >
+            <div className='title' >
+              <h1>Elite Food & Beverage</h1>
+              <h2>Enjoy The Taste With Elite</h2>
             <button type='button' >Bulk Order</button></div></div>
-            
-            
             <div className='introBar' >
                 <h2>Best Sellers</h2>
         <div className='bestSellers' ><Image

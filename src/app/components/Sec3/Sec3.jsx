@@ -41,7 +41,7 @@ function Sec3() {
       </div>
       <div className="down" >
         <div className="downLeft">
-        <h2>Everyday With Us For Energy</h2>
+        <h2>Everywhere With Us For Energy</h2>
         <p>If Elite Energizing Seeds are always and everywhere with you, you can claim to make the impossible possible.</p>
         <div><Image
       src={downLeft1}
