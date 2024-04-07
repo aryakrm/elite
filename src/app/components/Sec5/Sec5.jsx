@@ -16,7 +16,7 @@ function Sec5() {
         <input type="text" />
         <label htmlFor="email">Email:</label>
         <input type="email" />
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" cols="35" rows="10" placeholder='Your Experience' ></textarea>
         <button type='submit' > Submit </button>
       </form>
     </section>

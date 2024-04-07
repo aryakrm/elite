@@ -4,6 +4,7 @@ import Sec3 from "./components/Sec3/Sec3";
 import Sec4 from "./components/Sec4/Sec4";
 import { Vidaloka } from 'next/font/google'
 import Sec5 from "./components/Sec5/Sec5";
+import Sec6 from "./components/Sec6/Sec6";
 
  
 const vidaloka = Vidaloka({
@@ -12,6 +13,7 @@ const vidaloka = Vidaloka({
 })
 
 export default function Home() {
+  
   return (
     <main className={vidaloka.className}>
       <Intro/>
@@ -19,6 +21,7 @@ export default function Home() {
       <Sec3/>
       <Sec4/>
       <Sec5/>
+      <Sec6/>
     </main>
   );
 }

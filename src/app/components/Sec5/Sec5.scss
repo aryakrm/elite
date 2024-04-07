@@ -5,13 +5,14 @@
     align-items: center;
     h1{
         margin-bottom: 1rem;
+        color: #649484;
     }
     form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         label{
             color: #649484;
         }
@@ -26,7 +27,9 @@
             color: #649484;
         }
         textarea{
-            border: 3 solid #649484;
+            border: 3px solid #649484;
+            padding: 1rem;
+            border-radius: 20px;
         }
         button{
             width: 300px;
@@ -38,6 +41,11 @@
             font-size: 1rem;
             color: #FEECE0;
             background-color: #649484;
+            &:hover{
+                opacity: 0.5;
+                cursor: pointer;
+                transition: 500ms;
+            }
         }
     }
 }
