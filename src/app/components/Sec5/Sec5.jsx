@@ -1,5 +1,8 @@
 import React from 'react';
 import "./Sec5.scss"
+import Image from 'next/image'
+import shareEx from "../../../../public/static/images/shareEx.JPG"
+
 
 
 
@@ -7,7 +10,8 @@ function Sec5() {
 
 
   return (
-    <section className="Sec5" >
+    <section className="Sec5-container" >
+      <div className='Sec5' >
       <h1>
         Share your cooking experience with us!
       </h1>
@@ -22,6 +26,14 @@ function Sec5() {
       <p>
       After you have used Elite products and experienced the delicious taste of food with Elite, you can leave us a comment and share your pleasure with us.
       </p>
+      </div>
+      <Image
+      src={shareEx}
+      width={500}
+      height={700}
+      alt="shareEx"
+    /> 
+     
     </section>
   )
 }
