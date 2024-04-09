@@ -4,11 +4,13 @@ import process1 from "../../../../public/static/images/process1.png"
 import process2 from "../../../../public/static/images/process2.png"
 import process3 from "../../../../public/static/images/process3.png"
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
+import { MdFactory } from "react-icons/md";
 
 
 function Sec4() {
   return (
     <section className="Sec4">
+      <MdFactory />
       <h1>Our Process</h1>
       <h2>World Class Service</h2>
       <div className="cards">

@@ -5,11 +5,9 @@ import chi from "../../../../public/static/images/chiti.JPG"
 import ghermez from "../../../../public/static/images/ghermez.JPG"
 import nokhod from "../../../../public/static/images/nokhod.JPG"
 
-
-
 function Intro() {
   return (
-    <section>
+    <section className='Intro' >
         <div className='introLeft' ><Image
       src="/static/images/introPic.JPG"
       width={400}

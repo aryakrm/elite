@@ -10,6 +10,8 @@ nav{
 -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
 margin-bottom: 8px;
+position: fixed;
+top: 0;
 h1{
     color: #DE6E18;
 }
@@ -28,4 +30,35 @@ h1{
             font-size: 1rem;
         }
     }
-}
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        color: #DE6E18;
+        svg {
+          font-size: 1.5rem;
+        }
+      }
+      .side-menu-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        background-color: #FEECE0;
+        padding: 3rem;
+        width: 100vw;
+        }
+    }
+
+@media only screen and (max-width: 750px){
+    nav{
+        .hamburger {
+            display: block;
+          }
+        ul{
+            display: none;
+        }
+    
+}}

@@ -1,10 +1,11 @@
-section{
+.Intro{
     width: 100%;
     padding: 5rem;
     background-color: #FEECE0;
     display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 5rem;
         .introLeft{
             width: 50%;
             display: flex;
@@ -91,3 +92,62 @@ section{
        
    
 }
+
+
+
+@media only screen and (max-width: 1080px){
+    .Intro{
+     flex-direction: column;
+     margin-bottom: 5rem;
+     .introLeft{
+        width: 100%;
+        margin-bottom: 1rem;
+        img{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+    .introRight{
+        width: 100%;
+        text-align: center;
+        .introRightMain{
+            justify-content: center;
+            align-items: center;
+            .title{
+                h1{
+                    font-size: 3rem;
+
+                }
+            h2{
+                color: #649484;
+            }
+            }
+                
+        }
+        .bestSellers{
+            p{
+                font-size: 10px;
+            }
+        }
+        
+        
+       
+        .introBar{
+                width: 100%;
+                gap: 1rem;
+                padding: 1rem 0;
+                margin: 0;
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                }
+            h2{
+                font-size: 1rem;
+                display: none;
+            }
+            svg{
+                display: none;
+            }
+        }
+    }
+}}

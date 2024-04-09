@@ -2,7 +2,7 @@ import React from 'react';
 import "./Sec5.scss"
 import Image from 'next/image'
 import shareEx from "../../../../public/static/images/shareEx.JPG"
-
+import { PiCookingPotBold } from "react-icons/pi";
 
 
 
@@ -12,6 +12,7 @@ function Sec5() {
   return (
     <section className="Sec5-container" >
       <div className='Sec5' >
+      <PiCookingPotBold />
       <h1>
         Share your cooking experience with us!
       </h1>

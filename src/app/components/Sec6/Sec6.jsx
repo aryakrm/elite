@@ -13,6 +13,8 @@ import viva from "../../../../public/static/images/viva.jpeg"
 import westzone from "../../../../public/static/images/westzone.png"
 import uc from "../../../../public/static/images/uc.png"
 import Autoplay from 'embla-carousel-autoplay'
+import { MdLocalMall } from "react-icons/md";
+
 
 function Sec6() {
 
@@ -20,8 +22,8 @@ function Sec6() {
 
   return (
     <section className='Sec6' >
+      <MdLocalMall />
       <h1>Where you can find Elite products</h1>
-      
       <div className="embla" ref={emblaRef}>
       <div className="embla__container">
       <div className='embla__slide' >

@@ -6,10 +6,13 @@ import upRight2 from "../../../../public/static/images/upRight2.JPG"
 import downLeft1 from "../../../../public/static/images/downLeft1.JPG"
 import downLeft2 from "../../../../public/static/images/downLeft2.JPG"
 import downRight from "../../../../public/static/images/downRight.JPG"
+import { GiHealthPotion } from "react-icons/gi";
+
 
 function Sec3() {
   return (
     <section className="Sec3">
+      <GiHealthPotion />
         <h1>Live Healthy</h1>
       <div className="up" >
         <div className="upLeft">
