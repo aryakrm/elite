@@ -9,6 +9,7 @@ import downRight from "../../../../public/static/images/downRight.JPG"
 import { GiHealthPotion } from "react-icons/gi";
 
 
+
 function Sec3() {
   return (
     <section className="Sec3">
