@@ -20,11 +20,11 @@
         text-align: center;
         svg{
             font-size: 5rem;
-            color: #649484;
+            color: #00963F;
         }
         h1{
             margin-bottom: 1rem;
-            color: #649484;
+            color: #00963F;
         }
         form{
             display: flex;
@@ -33,20 +33,20 @@
             align-items: center;
             gap: 1rem;
             label{
-                color: #649484;
+                color: #00963F;
             }
             input{
                 width: 300px;
                 height: 40px;
                 border-radius: 20px;
-                border: 3px solid #649484;
+                border: 3px solid #00963F;
                 outline: none;
                 padding: 0 1rem;
                 font-size: 1rem;
-                color: #649484;
+                color: #00963F;
             }
             textarea{
-                border: 3px solid #649484;
+                border: 3px solid #00963F;
                 padding: 1rem;
                 border-radius: 20px;
             }
@@ -58,8 +58,8 @@
                 outline: none;
                 padding: 0 1rem;
                 font-size: 1rem;
-                color: #FEECE0;
-                background-color: #649484;
+                color: #fff;
+                background-color: #00963F;
                 &:hover{
                     opacity: 0.5;
                     cursor: pointer;
@@ -71,8 +71,8 @@
             font-size: 1.2rem;
             padding: 2rem;
             text-align: center;
-            color: #FEECE0;
-            background-color: #649484;
+            color: #fff;
+            background-color: #00963F;
             border-radius: 1rem;
             margin: 1rem;
             width: 100%;

@@ -1,0 +1,32 @@
+#About{
+    background-image: url("/static/images/blackBean.jpg");
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12rem 10rem 10rem 10rem;
+    .about-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 30px;
+        width: 80%;
+        padding: 4rem;
+        text-align: center;
+        line-height: 1.4rem;
+        border: 10px dotted #00963F;
+    }
+}
+
+
+@media only screen and (max-width: 1080px){
+    #About{
+        padding: 8rem 2rem;
+        .about-text{
+            padding: 3rem;
+            width: 95%;
+        }
+    }
+}
