@@ -40,9 +40,9 @@ function Nav() {
           >
             <ul className="side-menu-list">
             <li><Link href='/' > <FaHome /> Home</Link></li>
-            <li><Link href='/' > <FaInfo /> About</Link></li>
+            <li><Link href='/about' > <FaInfo /> About</Link></li>
             <li><Link href='/' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
-            <li><Link href='/' > <IoIosContacts /> Contact Us</Link></li>
+            <li><Link href='/contact' > <IoIosContacts /> Contact Us</Link></li>
             </ul>
           </motion.div>
         ) : null}

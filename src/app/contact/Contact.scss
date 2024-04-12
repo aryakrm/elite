@@ -1,0 +1,41 @@
+#Contact{
+    background-image: url("/static/images/blackBean.jpg");
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12rem 10rem 10rem 10rem;
+    .contact-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: #fff;
+        border-radius: 30px;
+        width: 80%;
+        padding: 4rem;
+        text-align: center;
+        line-height: 1.4rem;
+        border: 10px dotted #00963F;
+        h2{
+            color: #00963F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1080px){
+    #Contact{
+        padding: 8rem 2rem;
+        .contact-text{
+            padding: 3rem;
+            width: 95%;
+        }
+    }
+}
