@@ -2,6 +2,7 @@
 
 
 import React from 'react'
+import './Products.scss'
 import Image from 'next/image' 
 import { Vidaloka } from 'next/font/google'
 import { ProductsStore } from '../productsStore'

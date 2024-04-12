@@ -25,11 +25,11 @@ function Nav() {
 
   return (
     <nav>
-         <Link href='/'><h1>ELITE's LOGO</h1></Link>
+         <Link href='/'><h1>ELITEs LOGO</h1></Link>
         <ul>
             <li><Link href='/' > <FaHome /> Home</Link></li>
             <li><Link href='/about' > <FaInfo /> About</Link></li>
-            <li><Link href='/' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
+            <li><Link href='/products' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
             <li><Link href='/contact' > <IoIosContacts /> Contact Us</Link></li>
         </ul>
         {active ? (
@@ -41,7 +41,7 @@ function Nav() {
             <ul className="side-menu-list">
             <li><Link href='/' > <FaHome /> Home</Link></li>
             <li><Link href='/about' > <FaInfo /> About</Link></li>
-            <li><Link href='/' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
+            <li><Link href='/products' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
             <li><Link href='/contact' > <IoIosContacts /> Contact Us</Link></li>
             </ul>
           </motion.div>

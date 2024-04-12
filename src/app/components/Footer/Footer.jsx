@@ -12,7 +12,7 @@ function Footer() {
       <ul className='menu' >
             <li><Link href='/' > <FaHome /> Home</Link></li>
             <li><Link href='/about' > <FaInfo /> About</Link></li>
-            <li><Link href='/' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
+            <li><Link href='/products' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
             <li><Link href='/contact' > <IoIosContacts /> Contact Us</Link></li>
         </ul>
         <sub>Arya Karimi Copyright@ All Rights are Reserved By Elite Co.</sub>
