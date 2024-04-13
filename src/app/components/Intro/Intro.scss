@@ -70,7 +70,6 @@
            
             .introBar{
                 padding: 1rem;
-                padding-right: 3rem;
                 position: absolute;
                 right: 0;
                 background-color: #000;
@@ -81,12 +80,34 @@
                 gap: 2rem;
                 border-top-left-radius: 30px;
                 border-bottom-left-radius: 30px;
+                width: 60%;
                 h2{
                     transform: rotate(-90deg);
                 }
                 svg{
                     font-size: 1.5rem;
                 }
+                .embla {
+                    overflow: hidden;
+                    .embla__container {
+                        display: flex;
+                        gap: 1rem;
+                        width: 100%;
+                        .embla__slide {
+                            flex: 0 0 22%;
+                            min-width: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 0.5rem;
+                            img{
+                                border-radius: 100px;
+                            }
+                          }
+            
+                      }
+                  }
             }
         }
        

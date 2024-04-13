@@ -1,16 +1,31 @@
+'use client'
+
 import './Intro.scss'
 import Image from 'next/image'
 import { FaArrowRightLong } from "react-icons/fa6";
-import chi from "../../../../public/static/images/chiti.JPG"
-import ghermez from "../../../../public/static/images/ghermez.JPG"
-import nokhod from "../../../../public/static/images/nokhod.JPG"
+import almond from "../../../../public/static/images/products/almond.jpeg"
+import blackEyed from "../../../../public/static/images/products/blackEyed.jpeg"
+import cashew from "../../../../public/static/images/products/cashew.jpeg"
+import chickPeas from "../../../../public/static/images/products/chickPeas.jpeg"
+import lentils from "../../../../public/static/images/products/lentils.jpeg"
+import matterDal from "../../../../public/static/images/products/matterDal.jpeg"
+import pistachio from "../../../../public/static/images/products/pistachio.jpeg"
+import popcorn from "../../../../public/static/images/products/popcorn.jpeg"
+import rBean from "../../../../public/static/images/products/rBean.jpeg"
+import wBean from "../../../../public/static/images/products/wBean.jpeg"
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
+import Link from 'next/link';
 
 function Intro() {
+
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+
   return (
     <section className='Intro' >
         <div className='introLeft' ><Image
       src="/static/images/introPic.JPG"
-      width={400}
+      width={450}
       height={400}
       alt="Intro Image"
     /></div>
@@ -19,42 +34,105 @@ function Intro() {
             <div className='title' >
               <h1>Elite Food & Beverage</h1>
               <h2>Enjoy The Taste With Elite</h2>
-            <button type='button' >Bulk Order</button></div></div>
+            <Link href="/products" ><button type='button' >Bulk Order</button></Link> </div></div>
             <div className='introBar' >
-                <h2>Best Sellers</h2>
-        <div className='bestSellers' ><Image
-      src="/static/images/badum.JPG"
-      width={120}
-      height={120}
-      alt="ba"
+                <div className="embla" ref={emblaRef}>
+      <div className="embla__container">
+      <div className='embla__slide' >
+            <Image
+      src={almond}
+      width={150}
+      height={150}
+      alt="nesto"
     /> 
-    <p>Roasted Almond</p>
-     </div>
-        <div className='bestSellers' ><Image
-      src={chi}
-      width={120}
-      height={120}
-      alt="chi"
+    <p>Roasted almond</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={blackEyed}
+      width={150}
+      height={150}
+      alt="almaya"
     /> 
-    <p>White Kidney Beans</p>
-     </div>
-        <div className='bestSellers' ><Image
-      src={ghermez}
-      width={120}
-      height={120}
-      alt="gherm"
+    <p>Black Eyed beans</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={cashew}
+      width={150}
+      height={150}
+      alt="aswaaq"
     /> 
-    <p>Red Kidney Beans</p>
-     </div>
-        <div className='bestSellers' ><Image
-      src={nokhod}
-      width={120}
-      height={120}
-      alt="nokh"
+    <p>Salted cashews</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={chickPeas}
+      width={150}
+      height={150}
+      alt="carrefour"
     /> 
-    <p>Chick Peas</p>
-     </div>
-     <FaArrowRightLong />
+    <p>Chick peas</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={lentils}
+      width={150}
+      height={150}
+      alt="lulu"
+    /> 
+    <p>Green Lentils</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={matterDal}
+      width={150}
+      height={150}
+      alt="viva"
+    /> 
+    <p>Matter Dal</p>
+            </div>
+
+            <div className='embla__slide' >
+            <Image
+      src={pistachio}
+      width={150}
+      height={150}
+      alt="uc"
+    /> 
+    <p>Salted pistachio</p>
+            </div>
+
+            <div className='embla__slide' >
+            <Image
+      src={popcorn}
+      width={150}
+      height={150}
+      alt="westzone"
+    /> 
+    <p>Yellow Popcorn</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={rBean}
+      width={150}
+      height={150}
+      alt="westzone"
+    /> 
+    <p>Red kidney beans</p>
+            </div>
+            <div className='embla__slide' >
+            <Image
+      src={wBean}
+      width={150}
+      height={150}
+      alt="westzone"
+    /> 
+    <p>White kidney beans</p>
+            </div>
+
+      </div>
+      </div>
      </div>
         </div>
      
