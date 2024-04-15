@@ -14,16 +14,20 @@ import westzone from "../../../../public/static/images/westzone.png"
 import uc from "../../../../public/static/images/uc.png"
 import Autoplay from 'embla-carousel-autoplay'
 import { MdLocalMall } from "react-icons/md";
+// import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 
 function Sec6() {
 
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
+    const { t } = useTranslation();
+
   return (
     <section className='Sec6' >
       <MdLocalMall />
-      <h1>Where you can find Elite products</h1>
+      <h1>{t("Sec6_title")}</h1>
       <div className="embla" ref={emblaRef}>
       <div className="embla__container">
       <div className='embla__slide' >

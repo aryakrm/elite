@@ -1,3 +1,6 @@
+'use client'
+
+
 import "./Sec3.scss"
 import Image from 'next/image' 
 import upLeft from "../../../../public/static/images/upLeft.JPG"
@@ -7,14 +10,18 @@ import downLeft1 from "../../../../public/static/images/downLeft1.JPG"
 import downLeft2 from "../../../../public/static/images/downLeft2.JPG"
 import downRight from "../../../../public/static/images/downRight.JPG"
 import { GiHealthPotion } from "react-icons/gi";
-
+// import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 
 function Sec3() {
+  
+  const { t } = useTranslation();
+
   return (
     <section className="Sec3">
       <GiHealthPotion />
-        <h1>Live Healthy</h1>
+        <h1>{t("Sec3_title")}</h1>
       <div className="up" >
         <div className="upLeft">
         <Image
@@ -25,8 +32,8 @@ function Sec3() {
     /> 
         </div>
         <div className="upRight">
-            <h2>Everyday With Us For Meal</h2>
-            <p>If you want to have a healthy lifestyle, use elite miracle seeds in your cooking every day.</p>
+            <h2>{t("meal_title")}</h2>
+            <p>I{t("meal_slogan")}</p>
             <div><Image
       src={upRight1}
       width={300}
@@ -45,8 +52,8 @@ function Sec3() {
       </div>
       <div className="down" >
         <div className="downLeft">
-        <h2>Everywhere With Us For Energy</h2>
-        <p>If Elite Energizing Seeds are always and everywhere with you, you can claim to make the impossible possible.</p>
+        <h2>{t("energy_title")}</h2>
+        <p>{t("energy_slogan")}</p>
         <div><Image
       src={downLeft1}
       width={300}

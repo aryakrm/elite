@@ -6,10 +6,13 @@ import "./Sec5.scss"
 import Image from 'next/image'
 import shareEx from "../../../../public/static/images/shareEx.JPG"
 import { PiCookingPotBold } from "react-icons/pi";
-
+// import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 
 function Sec5() {
+
+  const { t } = useTranslation();
 
 
   return (
@@ -17,18 +20,18 @@ function Sec5() {
       <div className='Sec5' >
       <PiCookingPotBold />
       <h1>
-        Share your cooking experience with us!
+      {t("Sec5_title")}
       </h1>
       <form action="">
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">{t("name")}:</label>
         <input type="text" />
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">{t("email")}:</label>
         <input type="email" />
-        <textarea name="message" id="message" cols="35" rows="10" placeholder='Your Experience' ></textarea>
-        <button type='submit' > Submit </button>
+        <textarea name="message" id="message" cols="35" rows="10" placeholder={t("message")} ></textarea>
+        <button type='submit' > {t("submit")} </button>
       </form>
       <p>
-      After you have used Elite products and experienced the delicious taste of food with Elite, you can leave us a comment and share your pleasure with us.
+      {t("Sec5_text")}
       </p>
       </div>
       <Image

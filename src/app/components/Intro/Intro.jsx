@@ -16,10 +16,14 @@ import wBean from "../../../../public/static/images/products/wBean.jpeg"
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Link from 'next/link';
+// import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 function Intro() {
 
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  
+  const { t } = useTranslation();
 
   return (
     <section className='Intro' >
@@ -32,9 +36,9 @@ function Intro() {
         <div className='introRight' >
           <div className='introRightMain' >
             <div className='title' >
-              <h1>Elite Food & Beverage</h1>
-              <h2>Enjoy The Taste With Elite</h2>
-            <Link href="/products" ><button type='button' >Bulk Order</button></Link> </div></div>
+              <h1>{t("intro_title")} </h1>
+              <h2>{t("intro_slogan")}</h2>
+            <Link href="/products" ><button type='button' >{t("bulk_order")}</button></Link> </div></div>
             <div className='introBar' >
                 <div className="embla" ref={emblaRef}>
       <div className="embla__container">
@@ -45,7 +49,7 @@ function Intro() {
       height={150}
       alt="nesto"
     /> 
-    <p>Roasted almond</p>
+    <p>{t("almond")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -54,7 +58,7 @@ function Intro() {
       height={150}
       alt="almaya"
     /> 
-    <p>Black Eyed beans</p>
+    <p>{t("black_eyed")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -63,7 +67,7 @@ function Intro() {
       height={150}
       alt="aswaaq"
     /> 
-    <p>Salted cashews</p>
+    <p>{t("salted_cashew")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -72,7 +76,7 @@ function Intro() {
       height={150}
       alt="carrefour"
     /> 
-    <p>Chick peas</p>
+    <p>{t("chick")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -81,7 +85,7 @@ function Intro() {
       height={150}
       alt="lulu"
     /> 
-    <p>Green Lentils</p>
+    <p>{t("lentil")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -90,7 +94,7 @@ function Intro() {
       height={150}
       alt="viva"
     /> 
-    <p>Matter Dal</p>
+    <p>{t("dal")}</p>
             </div>
 
             <div className='embla__slide' >
@@ -100,7 +104,7 @@ function Intro() {
       height={150}
       alt="uc"
     /> 
-    <p>Salted pistachio</p>
+    <p>{t("pistachio")}</p>
             </div>
 
             <div className='embla__slide' >
@@ -110,7 +114,7 @@ function Intro() {
       height={150}
       alt="westzone"
     /> 
-    <p>Yellow Popcorn</p>
+    <p>{t("popcorn")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -119,7 +123,7 @@ function Intro() {
       height={150}
       alt="westzone"
     /> 
-    <p>Red kidney beans</p>
+    <p>{t("rBean")}</p>
             </div>
             <div className='embla__slide' >
             <Image
@@ -128,7 +132,7 @@ function Intro() {
       height={150}
       alt="westzone"
     /> 
-    <p>White kidney beans</p>
+    <p>{t("wBean")}</p>
             </div>
 
       </div>

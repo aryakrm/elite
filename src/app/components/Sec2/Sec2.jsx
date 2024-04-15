@@ -1,17 +1,24 @@
+'use client'
+
 import "./Sec2.scss"
 import Image from 'next/image'
 import nokhodlu from "../../../../public/static/images/nokhodlu.JPG"
 import sefidli from "../../../../public/static/images/sefidli.JPG"
 import lepeli from "../../../../public/static/images/lepeli.JPG"
 import { GiPlantRoots } from "react-icons/gi";
+// import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 
 function Sec2() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="Sec2" >
       <GiPlantRoots />
-        <h1>Our Favorite Organics</h1>
-        <p>PRODUCTS THAT OUR COSTUMERS ENJOY</p>
+        <h1>{t("Sec2_title")}</h1>
+        <p>{t("Sec2_title")}</p>
         <div className="cards" >
             <div>
             <Image
@@ -20,8 +27,8 @@ function Sec2() {
       height={250}
       alt="no"
     /> 
-    <p>Roasted Broccoli Chickpeas</p>
-    <p>Contains vitamins A,B,E</p>
+    <p>{t("broccoli")}</p>
+    <p>{t("broccoli_vitamin")}</p>
             </div>
             <div>
             <Image
@@ -30,8 +37,8 @@ function Sec2() {
       height={250}
       alt="sef"
     /> 
-    <p>Hearty Tuscan White Bean Soup</p>
-    <p>Contains vitamins B,K,E</p>
+    <p>{t("soup")}</p>
+    <p>{t("soup_vitamin")}</p>
             </div>
             <div>
             <Image
@@ -40,8 +47,8 @@ function Sec2() {
       height={250}
       alt="lep"
     /> 
-    <p>Lemon Balsamic Lentil Salad</p>
-    <p>Contains vitamins B1,B2,B3</p>
+    <p>{t("salad")}</p>
+    <p>{t("salad_vitamin")}</p>
             </div>
         </div>
       

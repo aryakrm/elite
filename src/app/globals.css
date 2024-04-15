@@ -25,3 +25,11 @@ a:hover{
 ul{
   list-style: none;
 }
+
+
+.wpLogo{
+  position: fixed;
+  z-index: 51;
+  bottom: 2rem;
+  right: 2rem;
+}

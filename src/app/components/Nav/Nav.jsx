@@ -10,7 +10,10 @@ import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { IoIosContacts } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-
+import Image from 'next/image'
+import eliteLogo from "../../../../public/static/images/eliteLogo.png"
+// import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 
 function Nav() {
@@ -21,16 +24,32 @@ function Nav() {
   const menuTogglerHandler = () => {
     setActive(!active);
   };
+
+  function selectEn() {
+    let loc = "/";
+    window.location.replace(loc + "?lng=en");
+  }
+  function selectAr() {
+    let loc = "/";
+    window.location.replace(loc + "?lng=ar");
+  }
+
+  const { t } = useTranslation();
   
 
   return (
     <nav>
-         <Link href='/'><h1>ELITEs LOGO</h1></Link>
+         <Link href='/'><Image
+      src={eliteLogo}
+      width={100}
+      height={120}
+      alt="Elite Logo"
+    /> </Link>
         <ul>
-            <li><Link href='/' > <FaHome /> Home</Link></li>
-            <li><Link href='/about' > <FaInfo /> About</Link></li>
-            <li><Link href='/products' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
-            <li><Link href='/contact' > <IoIosContacts /> Contact Us</Link></li>
+            <li><Link href='/' > <FaHome /> {t("Home")}</Link></li>
+            <li><Link href='/about' > <FaInfo /> {t("About")}</Link></li>
+            <li><Link href='/products' > <MdOutlineProductionQuantityLimits /> {t("Products")}</Link></li>
+            <li><Link href='/contact' > <IoIosContacts /> {t("Contact")}</Link></li>
         </ul>
         {active ? (
           <motion.div
@@ -39,16 +58,16 @@ function Nav() {
             onClick={() => setActive(!active)}
           >
             <ul className="side-menu-list">
-            <li><Link href='/' > <FaHome /> Home</Link></li>
-            <li><Link href='/about' > <FaInfo /> About</Link></li>
-            <li><Link href='/products' > <MdOutlineProductionQuantityLimits />  Products</Link></li>
-            <li><Link href='/contact' > <IoIosContacts /> Contact Us</Link></li>
+            <li><Link href='/' > <FaHome /> {t("Home")}</Link></li>
+            <li><Link href='/about' > <FaInfo /> {t("About")}</Link></li>
+            <li><Link href='/products' > <MdOutlineProductionQuantityLimits />  {t("Products")}</Link></li>
+            <li><Link href='/contact' > <IoIosContacts /> {t("Contact")}</Link></li>
             </ul>
           </motion.div>
         ) : null}
         <div className='languages' >
-        <span class="fi fi-gb"></span>
-        <span class="fi fi-ae"></span>
+        <span onClick={selectEn} class="fi fi-gb"></span>
+        <span onClick={selectAr} class="fi fi-ae"></span>
         </div>
         <div onClick={menuTogglerHandler} className="hamburger">
           {active ? (
