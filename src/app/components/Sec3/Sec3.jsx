@@ -33,7 +33,7 @@ function Sec3() {
         </div>
         <div className="upRight">
             <h2>{t("meal_title")}</h2>
-            <p>I{t("meal_slogan")}</p>
+            <p>{t("meal_slogan")}</p>
             <div><Image
       src={upRight1}
       width={300}
