@@ -18,7 +18,7 @@ function Sec2() {
     <section className="Sec2" >
       <GiPlantRoots />
         <h1>{t("Sec2_title")}</h1>
-        <p>{t("Sec2_title")}</p>
+        <p>{t("Sec2_slogan")}</p>
         <div className="cards" >
             <div>
             <Image
