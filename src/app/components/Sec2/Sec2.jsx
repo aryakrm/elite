@@ -29,6 +29,7 @@ function Sec2() {
     /> 
     <p>{t("broccoli")}</p>
     <p>{t("broccoli_vitamin")}</p>
+    <p>E,B,A</p>
             </div>
             <div>
             <Image
@@ -39,6 +40,7 @@ function Sec2() {
     /> 
     <p>{t("soup")}</p>
     <p>{t("soup_vitamin")}</p>
+    <p>E,K,B</p>
             </div>
             <div>
             <Image
@@ -49,6 +51,7 @@ function Sec2() {
     /> 
     <p>{t("salad")}</p>
     <p>{t("salad_vitamin")}</p>
+    <p>B2,B1,B3</p>
             </div>
         </div>
       
