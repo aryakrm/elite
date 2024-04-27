@@ -11,8 +11,8 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Elite Food & Beverage",
-  description: "Elite Food & Beverage's Official Website",
+  title: "Elite Food & Suppliments",
+  description: "Elite Food & Suppliments's Official Website",
 };
 
 export default function RootLayout({ children }) {
