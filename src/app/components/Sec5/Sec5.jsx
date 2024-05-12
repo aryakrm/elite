@@ -20,6 +20,11 @@ function Sec5() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log({
+      name, 
+      email,
+      message
+    })
     if(name && email && message) {
 
       let messageData = {
@@ -29,6 +34,7 @@ function Sec5() {
       }
 
       try {
+        
         const response = await fetch('/api/send', {
             method: 'POST',
             headers: {
